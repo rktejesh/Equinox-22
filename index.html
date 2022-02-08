@@ -1,49 +1,1081 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Equinox</title>
-	<meta
-	name="Equinox 2022"
-	content="Official Website of Equinox 2022"
-	/>
-	<meta
-	name="keywords"
-	content="Equinox,Equinox 2022,equinox,equinox 2022"
-	/>
-	<meta name="author" content="blank-27" />
-	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="author" content="wish" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://use.typekit.net/uok8swb.css">
+	<link rel="stylesheet" type="text/css" href="src/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="src/css/main.css" />
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.4/smooth-scrollbar.min.js"
+		integrity="sha512-uTuRVg2sX1/cMtqmqW82QpIDCgeDKPeBddz928F4aPJgUWfdiU0GycmSgXBfQhKDy+K1SPYC/72NaNJdCnqeWw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://kit.fontawesome.com/1701e96119.js" crossorigin="anonymous"></script>
 	<script>
-	document.documentElement.className = "js";
-	var supportsCssVars = function () {
-		var e,
-		t = document.createElement("style");
-		return (
-		(t.innerHTML = "root: { --tmp-var: bold; }"),
-		document.head.appendChild(t),
-		(e = !!(
-			window.CSS &&
-			window.CSS.supports &&
-			window.CSS.supports("font-weight", "var(--tmp-var)")
-		)),
-		t.parentNode.removeChild(t),
-		e
-		);
-	};
-	supportsCssVars() ||
-		alert(
-		"Please view this demo in a modern browser that supports CSS Variables."
-		);
+		document.documentElement.className = "js";
+		var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
 	</script>
-	<link href="./assets/style/home-min/home.css" rel="stylesheet" />
-	<link href="./assets/style/home-min/vendors.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.typekit.net/lma7zwj.css">
+	<link rel="stylesheet" type="text/css" href="dist/app.css" />
+	<link rel="stylesheet" href="https://use.typekit.net/uok8swb.css">
+	<link rel="stylesheet" type="text/css" href="src/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="src/css/revealer.css" />
+	<!-- include the plain JS version -->
+	<script src="dist/app.js"></script>
+	<script src="https://js.linkz.ai/?key=61fa74aa56ad72006f4c0675"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERWC9834CY"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-ERWC9834CY');
+	</script>
 </head>
+
 <body>
-	<div class="overlay"></div>
-	<main>
-	</main>
-	<script type="text/javascript" src="./assets/js/home-min/vendors.js"></script>
-	<script type="text/javascript" src="./assets/js/home-min/home.js"></script>
+	<div id="cursor"></div>
+	<div id="follower"></div>
+	<div id="preloader">
+		<div class="Loader" data-text="Loading">
+			<span class="Loader__Circle"></span>
+			<span class="Loader__Circle"></span>
+			<span class="Loader__Circle"></span>
+			<span class="Loader__Circle"></span>
+		</div>
+	</div>
+	<div class="perspective">
+		<div class="container-menu">
+			<div class="outer-nav--return"></div>
+			<div id="viewport" class="l-viewport">
+				<div class="l-wrapper">
+					<header class="header">
+						<a>
+							<div class="header--nav-toggle">
+								<span></span>
+							</div>
+						</a>
+					</header>
+					<ul class="l-main-content main-content">
+						<li class="l-section section section--is-active">
+							<!-- <div class="app__content" style="transform:translateZ(0)">
+										<div class='time-wrapper'>
+											<div class='time-part-wrapper'>
+												<div class='time-part days tens'>
+													<div class='digit-wrapper'>
+														<span class='digit'>0</span>
+														<span class='digit'>9</span>
+														<span class='digit'>8</span>
+														<span class='digit'>7</span>
+														<span class='digit'>6</span>
+														<span class='digit'>5</span>
+														<span class='digit'>4</span>
+														<span class='digit'>3</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+													</div>
+												</div>
+												<div class='time-part days ones'>
+													<div class='digit-wrapper'>
+														<span class='digit'>0</span>
+														<span class='digit'>9</span>
+														<span class='digit'>8</span>
+														<span class='digit'>7</span>
+														<span class='digit'>6</span>
+														<span class='digit'>5</span>
+														<span class='digit'>4</span>
+														<span class='digit'>3</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+													</div>
+												</div>
+											</div>
+											<div class='time-part-wrapper'>
+												<div class='time-part minutes tens'>
+													<div class='digit-wrapper'>
+														<span class='digit'>0</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+													</div>
+												</div>
+												<div class='time-part minutes ones'>
+													<div class='digit-wrapper'>
+														<span class='digit'>3</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+														<span class='digit'>9</span>
+														<span class='digit'>8</span>
+														<span class='digit'>7</span>
+														<span class='digit'>6</span>
+														<span class='digit'>5</span>
+														<span class='digit'>4</span>
+														<span class='digit'>3</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+														<span class='digit'>9</span>
+														<span class='digit'>8</span>
+														<span class='digit'>7</span>
+														<span class='digit'>6</span>
+														<span class='digit'>5</span>
+														<span class='digit'>4</span>
+														<span class='digit'>3</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+													</div>
+												</div>
+											</div>
+											<div class='time-part-wrapper'>
+												<div class='time-part seconds tens'>
+													<div class='digit-wrapper'>
+														<span class='digit'>0</span>
+														<span class='digit'>5</span>
+														<span class='digit'>4</span>
+														<span class='digit'>3</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+													</div>
+												</div>
+												<div class='time-part seconds ones'>
+													<div class='digit-wrapper'>
+														<span class='digit'>0</span>
+														<span class='digit'>9</span>
+														<span class='digit'>8</span>
+														<span class='digit'>7</span>
+														<span class='digit'>6</span>
+														<span class='digit'>5</span>
+														<span class='digit'>4</span>
+														<span class='digit'>3</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+													</div>
+												</div>
+											</div>
+											<div class='time-part-wrapper'>
+												<div class='time-part hundredths tens'>
+													<div class='digit-wrapper'>
+														<span class='digit'>0</span>
+														<span class='digit'>5</span>
+														<span class='digit'>4</span>
+														<span class='digit'>3</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+													</div>
+												</div>
+												<div class='time-part hundredths ones'>
+													<div class='digit-wrapper'>
+														<span class='digit'>0</span>
+														<span class='digit'>9</span>
+														<span class='digit'>8</span>
+														<span class='digit'>7</span>
+														<span class='digit'>6</span>
+														<span class='digit'>5</span>
+														<span class='digit'>4</span>
+														<span class='digit'>3</span>
+														<span class='digit'>2</span>
+														<span class='digit'>1</span>
+														<span class='digit'>0</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div> -->
+							<!-- <div class="date-badge">
+								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 101 183.06">
+									<defs>
+										<style>
+											.cls-1,
+											.cls-3 {
+												fill: #000000;
+											}
+			
+											.cls-1 {
+												stroke: #000000;
+											}
+			
+											.cls-1,
+											.cls-4,
+											.cls-5 {
+												stroke-miterlimit: 10;
+											}
+			
+											.cls-2 {
+												opacity: 0.6;
+											}
+			
+											.cls-4,
+											.cls-5 {
+												fill: none;
+											}
+			
+											.cls-4 {
+												stroke: #f1f2f2;
+												stroke-dasharray: 12;
+											}
+			
+											.cls-5 {
+												stroke: #fff;
+												stroke-dasharray: 6;
+											}
+			
+											.cls-6 {
+												font-size: 41px;
+											}
+			
+											.cls-6,
+											.cls-7 {
+												fill: #f1f2f2;
+												font-family: BungeeInline-Regular, Bungee Inline;
+											}
+			
+											.cls-7 {
+												font-size: 24px;
+											}
+			
+											.cls-8 {
+												letter-spacing: -0.01em;
+											}
+										</style>
+									</defs>
+									<polygon class="cls-1" points="0.5 0.5 100.5 0.5 100.5 157.01 50.5 182.5 0.5 155.65 0.5 0.5" />
+									<g class="cls-2">
+										<polygon class="cls-3"
+											points="2.65 3.31 96.86 3.31 96.86 153.69 50.5 177.18 2.65 152.16 2.65 3.31" />
+										<polygon class="cls-4"
+											points="2.65 3.31 96.86 3.31 96.86 153.69 50.5 177.18 2.65 152.16 2.65 3.31" />
+										<polygon class="cls-5"
+											points="2.65 3.31 96.86 3.31 96.86 153.69 50.5 177.18 2.65 152.16 2.65 3.31" />
+									</g>
+									<image width="1861" height="1391" transform="translate(11.42 19.65) scale(0.04)"
+										xlink:href="src/img/equinox.png" /><text class="cls-6"
+										transform="translate(13.1 120.91)">8-9</text><text class="cls-7"
+										transform="translate(9.6 144.69)">Apri<tspan class="cls-8" x="66.24" y="0">l</tspan></text>
+								</svg>
+							</div> -->
+							<div class="cda-removeleft cda-naked cda-noimg demo-4">
+								<main>
+									<div class="content">
+										<div id="app"></div>
+										<div class="min-vh-100 d-flex flex-column w-100">
+											<div
+												class="content__title-wrap flex-grow-1 d-flex align-items-center justify-content-center">
+												<span class="">
+													<img class="logo" width="502px" height="400px"
+														src="https://ik.imagekit.io/instaclone/equinox/equinox_qBRsMd4uBxz.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643547338869" />
+													<!-- <h2 class="content__title">Equinox</h2> -->
+												</span>
+											</div>
+											<div class="d-flex justify-content-md-end justify-content-center p-3">
+												<div class="social-buttons">
+													<a href="https://www.instagram.com/equinoxiiitl/"
+														class="social-buttons__button social-button social-button--instagram"
+														aria-label="Instagram">
+														<i class="fab fa-instagram"></i>
+													</a>
+													<a href="https://www.linkedin.com/company/equinox-iiitl/"
+														class="social-buttons__button social-button social-button--linkedin"
+														aria-label="LinkedIn">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+													<a href="https://discord.com/invite/PytHHH8yxN"
+														class="social-buttons__button social-button social-button--discord"
+														aria-label=Discord">
+														<i class="fab fa-discord"></i>
+													</a>
+													<a href="https://twitter.com/equinoxiiitl"
+														class="social-buttons__button social-button social-button--twitter"
+														aria-label="Twitter">
+														<i class="fab fa-twitter"></i>
+													</a>
+													<a href="https://www.facebook.com/equinox22"
+														class="social-buttons__button social-button social-button--facebook"
+														aria-label="Facebook">
+														<i class="fab fa-facebook"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</main>
+							</div>
+						</li>
+						<li class="l-section section">
+							<div class="mainEvents" id="mainEvents">
+								<div class="eventsHover">
+									<div class="eventsHover-1">
+
+									</div>
+									<div class="eventsHover-2">
+
+									</div>
+								</div>
+								<main class="eventsContent">
+									<div class="message">Please view on desktop.</div>
+									<h1 class="page-title | title" style="user-select: none;">Equinox <span
+											class="slideshow__title__offset | title__offset">Events</span></h1>
+									<section class="content | scrollarea-ctn">
+										<div class="scrollarea | slideshow">
+											<ul class="slideshow-list">
+												<li class="slideshow-list__el">
+													<article class="tile | js-tile">
+														<a href="#">
+															<figure class="tile__fig">
+																<img src="https://ik.imagekit.io/instaclone/equinox/hackathon_wMKb8kELm.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643549520014"
+																	data-hover="https://ik.imagekit.io/instaclone/equinox/hackathon-1_UpjhVkTmjhh.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643549548283"
+																	alt="Woods & Forests" class="tile__img">
+															</figure>
+															<div class="tile__content">
+																<h2 class="tile__title | title title--medium "> <span
+																		class="title__offset title__offset--medium">HackoFiesta</span>
+																</h2>
+																<div class="tile__cta">
+																	<span class="btn-inline">See more</span>
+																</div>
+																<div class="tile__desc">
+																	<p class="title__info">Equinox presents
+																		Hack-o-Fiesta, Hackathon
+																		designed to inspire and empower young coders to
+																		pursue and develop their programming skills.
+																		Over the course of 36 hours, teams of 1 - 5
+																		participants will work to develop a software
+																		project that encourages team spirit & helps to
+																		solve real-world problems.
+																	</p>
+																</div>
+															</div>
+														</a>
+													</article>
+												</li>
+												<li class="slideshow-list__el">
+													<article class="tile | js-tile">
+														<a href="#">
+															<figure class="tile__fig">
+																<img src="https://ik.imagekit.io/instaclone/equinox/rear_76R3tIRFk.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643549829968"
+																	data-hover="https://ik.imagekit.io/instaclone/equinox/code1_CjJrbUc_4.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643549911413"
+																	alt="Rocks & Mountains" class="tile__img">
+															</figure>
+															<div class="tile__content">
+																<h2 class="tile__title | title title--medium ">
+																	<span
+																		class="title__offset title__offset--medium">Dream
+																		in Code</span>
+																</h2>
+																<div class="tile__cta">
+																	<span class="btn-inline">See more</span>
+																</div>
+																<div class="tile__desc">
+																	<p>Dream-in-Code, a global coding competition, where
+																		programmers of all levels put their skills to
+																		the test. Competitors work their way through a
+																		series of online algorithmic puzzles to earn a
+																		spot at the finals, all for a chance to win the
+																		championship title and take a grand prize
+																		home.It is based on ACM style rounds that
+																		continue for 3 hours unless the information
+																		about the round states other duration time.</p>
+																</div>
+															</div>
+														</a>
+													</article>
+												</li>
+												<li class="slideshow-list__el">
+													<article class="tile | js-tile">
+														<a href="#">
+															<figure class="tile__fig">
+																<img src="https://ik.imagekit.io/instaclone/equinox/cyber_8fREeLZMux2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643549958894"
+																	data-hover="https://ik.imagekit.io/instaclone/equinox/icognito_VLy16ChAakD.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643549968735"
+																	alt="Cities & Skylines" class="tile__img">
+															</figure>
+															<div class="tile__content">
+																<h2 class="tile__title | title title--medium ">
+																	<span
+																		class="title__offset title__offset--medium">Incognito
+																		V3.0</span>
+																	</spa>
+																</h2>
+																<div class="tile__cta">
+																	<span class="btn-inline">See more</span>
+																</div>
+																<div class="tile__desc">
+																	<p>"Computers are good at following instructions,
+																		but not at keeping your secrets." The flagship
+																		CTF event, an international contest that gathers
+																		more than 300 teams from all around the globe.
+																		Your skills will be pushed to the limits by
+																		advanced real life cyber-attack scenarios
+																		prepared by Equinox cybersecurity experts. So
+																		get ready to capture the flags and rise to the
+																		top.</p>
+																</div>
+															</div>
+														</a>
+													</article>
+												</li>
+												<li class="slideshow-list__el">
+													<article class="tile | js-tile">
+														<a href="#">
+															<figure class="tile__fig">
+																<img src="https://ik.imagekit.io/instaclone/equinox/web__0N8hzbV_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643550061685"
+																	data-hover="https://ik.imagekit.io/instaclone/equinox/code_g4p7VKq6BEZ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643550161069"
+																	alt="SAND & DESERTS" class="tile__img">
+															</figure>
+															<div class="tile__content">
+																<h2 class="tile__title | title title--medium ">
+																	<span
+																		class="title__offset title__offset--medium">Web
+																		Maniac</span>
+																	</spa>
+																</h2>
+																<div class="tile__cta">
+																	<span class="btn-inline">See more</span>
+																</div>
+																<div class="tile__desc">
+																	<p>It's time to brush up and furnish your web
+																		development skills where the participants will
+																		be given a problem statement which will be
+																		devised in such a way that will test the two
+																		subdomains of Web Development: Frontend and
+																		Backend. This challenge will test your
+																		development instincts and will surely carve out
+																		a better developer in you.</p>
+																</div>
+															</div>
+														</a>
+													</article>
+												</li>
+												<li class="slideshow-list__el">
+													<article class="tile | js-tile">
+														<a href="#">
+															<figure class="tile__fig">
+																<img src="https://ik.imagekit.io/instaclone/equinox/app_d3XgWpVUZ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643550212675"
+																	data-hover="https://ik.imagekit.io/instaclone/equinox/self_q6mEg5zp4S_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643550213161"
+																	alt="Snow & Mountains" class="tile__img">
+															</figure>
+															<div class="tile__content">
+																<h2 class="tile__title | title title--medium ">
+																	<span
+																		class="title__offset title__offset--medium">Appophillia</span>
+																	</spa>
+																</h2>
+																<div class="tile__cta">
+																	<span class="btn-inline">See more</span>
+																</div>
+																<div class="tile__desc">
+																	<p>For some, the thought of creating a mobile app
+																		from scratch sounds like an uphill task full of
+																		corny, complex coding activities. But it doesn’t
+																		have to be that way! Turn on the developer mode
+																		in your phones, assemble a team of 1 or 2
+																		developers, pick your target problem from a set
+																		of austere but entrancing themes and unleash
+																		your creativity to create mobile app solutions
+																		using Java, Kotlin or Flutter framework.</p>
+																</div>
+															</div>
+														</a>
+													</article>
+												</li>
+												<li class="slideshow-list__el">
+													<article class="tile | js-tile">
+														<a href="#">
+															<figure class="tile__fig">
+																<img src="https://ik.imagekit.io/instaclone/equinox/max_mhegKNE_1.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643550259005"
+																	data-hover="dist/img/screen.jpg"
+																	alt="Snow & Mountains" class="tile__img">
+															</figure>
+															<div class="tile__content">
+																<h2 class="tile__title | title title--medium ">
+																	<span
+																		class="title__offset title__offset--medium">Coduo</span>
+																	</spa>
+																</h2>
+																<div class="tile__cta">
+																	<span class="btn-inline">See more</span>
+																</div>
+																<div class="tile__desc">
+																	<p>Here, you have to participate with either your
+																		coding partner or alone to solve some
+																		algorithmic problems full of logic building and
+																		other maths mastering puzzles. Coduo will take
+																		place in two steps, one is prelims to be held on
+																		“Codechef”, and second one is finals on a
+																		platform known as “Hackerearth”. This
+																		competition is focused on testing your problem
+																		solving, logical thinking and coding skills.</p>
+																</div>
+															</div>
+														</a>
+													</article>
+												</li>
+											</ul>
+										</div>
+										<div class="slideshow__progress-ctn"><span class="slideshow__progress"></span>
+										</div>
+									</section>
+									<aside class="detail-view">
+										<div class="detail-view__inner">
+											<button class="close-detail">
+												<img src="dist/img/back.svg" alt="Back to slideshow"
+													class="close-detail__back">
+											</button>
+											<div class="detail-view__content">
+												<h2 class="detail-view__title | title title--large"> Woods & forests
+												</h2>
+												<div class="detail-view__text">
+													<p></p>
+												</div>
+												<div class="wrapper">
+													<div class='bttn in'>
+														<span>REGISTER</span>
+														<div class='corners top'></div>
+														<div class='corners bottom'></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</aside>
+									<canvas id="scene"></canvas>
+								</main>
+							</div>
+						</li>
+						<li class="l-section section">
+							//TODO speakers
+						</li>
+						<li class="l-section section">
+							//TODO timeline
+						</li>
+						<li class="l-section section">
+							//TODO sponsors
+						</li>
+						<li class="l-section section demo-3 js">
+							<svg class="hidden">
+								<symbol id="icon-arrow" viewBox="0 0 24 24">
+									<title>arrow</title>
+									<polygon
+										points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+								</symbol>
+								<symbol id="icon-drop" viewBox="0 0 24 24">
+									<title>drop</title>
+									<path
+										d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+									<path
+										d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+								</symbol>
+								<symbol id="icon-nav-arrow" viewBox="0 0 24 17">
+									<title>nav arrow</title>
+									<polygon
+										points="14.1333333 2.61666667 18.9333333 7.41666667 0 7.41666667 0 10.0833333 18.9333333 10.0833333 14.1333333 14.8833333 16 16.75 24 8.75 16 0.75">
+									</polygon>
+								</symbol>
+							</svg>
+							<div class="about-us-page">
+								<div class="grid-section">
+									<div class="grid grid--layout-1 grid--current">
+										<div class="grid__item" data-delay="150" data-direction="ttb"></div>
+										<div class="grid__item" data-delay="300" data-direction="ttb"></div>
+										<div class="grid__item" data-delay="200" data-direction="ttb"></div>
+										<div class="grid__item" data-delay="40" data-direction="ttb"></div>
+										<div class="grid__item" data-delay="70" data-direction="ttb"></div>
+										<div class="grid__item" data-delay="100" data-direction="ttb"></div>
+										<div class="grid__item" data-delay="250" data-direction="ttb"></div>
+										<div class="grid__item" data-delay="350" data-direction="ttb"></div>
+										<div class="grid__item" data-delay="400" data-direction="ttb"></div>
+										<div class="grid__item" data-direction="ttb"></div>
+										<div class="grid__item" data-direction="ttb" data-delay="20"></div>
+										<div class="grid__item" data-direction="ttb" data-delay="500"></div>
+										<div class="grid__item" data-delay="120" data-direction="ttb"></div>
+										<div class="grid__item" data-direction="ttb"></div>
+										<div class="grid__item" data-direction="ttb"></div>
+										<h3 class="grid__item grid__item--title">IIIT Lucknow</h3>
+										<p class="grid__item grid__item--text">The Annual Technical Fest</p>
+									</div>
+									<!-- <div class="grid grid--layout-2">
+										<div class="grid__item" data-delay="350"></div>
+										<div class="grid__item" data-delay="20"></div>
+										<div class="grid__item"></div>
+										<div class="grid__item" data-delay="400"></div>
+										<div class="grid__item" data-delay="70"></div>
+										<div class="grid__item" data-delay="350"></div>
+										<div class="grid__item" data-delay="200"></div>
+										<div class="grid__item" data-delay="500"></div>
+										<div class="grid__item"></div>
+										<div class="grid__item" data-delay="20"></div>
+										<div class="grid__item" data-delay="450"></div>
+										<div class="grid__item"></div>
+										<div class="grid__item" data-delay="650"></div>
+										<div class="grid__item" data-delay="100">
+
+										</div>
+										<div class="grid__item">
+
+										</div>
+										<h2 class="grid__item grid__item--name">Oyo<br /> Expo <br />2018</h2>
+										<h3 class="grid__item grid__item--title">Minsk</h3>
+										<p class="grid__item grid__item--text">You mean it ain't me noggin' leisurely
+											shepherd's pie bossy britches</p>
+									</div>
+									<div class="grid grid--layout-3">
+										<div class="grid__item"></div>
+										<div class="grid__item" data-delay="200"></div>
+										<div class="grid__item" data-delay="400"></div>
+										<div class="grid__item" data-delay="300"></div>
+										<div class="grid__item" data-delay="140"></div>
+										<div class="grid__item" data-delay="600"></div>
+										<div class="grid__item" data-delay="350"></div>
+										<div class="grid__item" data-delay="500"></div>
+										<div class="grid__item" data-delay="50"></div>
+										<div class="grid__item" data-delay="250"></div>
+										<div class="grid__item" data-delay="300"></div>
+										<div class="grid__item" data-delay="100"></div>
+										<div class="grid__item" data-delay="40"></div>
+										<div class="grid__item"></div>
+										<div class="grid__item" data-delay="40"></div>
+										<h2 class="grid__item grid__item--name">Oyo<br /> Expo <br />2019</h2>
+										<h3 class="grid__item grid__item--title">Paris</h3>
+										<p class="grid__item grid__item--text">Dignified teacakes air one's dirty linen
+											off
+											t'shop scouser quid pezzy little taking the mick</p>
+									</div> -->
+								</div>
+								<div class="grid-content">
+									<div class="title title--medium">
+										EQUINOX 22
+									</div>
+									<div>
+										Equinox, the annual technical fest organized by IIIT Lucknow is back with its
+										third edition. With the theme of this year's Equinox'22 being "Embracing the
+										Nostalgia", we aim to take you back to the times as good as ever, with a new
+										version of you, the one that will triumph over all the hardships and help you
+										find a new epitome of hope and growth.<br><br>
+
+										Celebrating the coder, the reader, the learner, and the leader, Equinox provides
+										them a platform to showcase their ideas and build upon them, to morph their
+										unrelenting imagination into a reality. This time all your joy, excitement, and
+										thriller will be quadrupled as we are back with many more fun exciting contests
+										for all students, experts, and beginners to code, learn and experience the
+										wonders of technology.<br><br>
+
+										Equinox will take you on a 3-day journey filled with adventurous and educational
+										events that will drive you to think outside the box and leave you with a hue of
+										reminiscent memories. To participate in fest events you must be 18 years of age.
+										For any queries, you can contact a team member.<br><br>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="l-section section tttl">
+							<div class="team-page">
+								<h1 class="title | page-title">TEAM</h1>
+								<div class="team-page-div">
+									<div class="team-overview">
+										<h2>Who Are We?</h2>
+										<a href="#">Meet the Entire Team</a>
+										<p>
+										<div class="team-page-info">Lorem ipsum dolor, sit amet consectetur adipisicing
+											elit. Adipisci quae
+											nesciunt officia! Autem, nam eum voluptatem, esse voluptatibus deleniti
+											tempora laboriosam sequi pariatur, explicabo itaque. Fuga, deserunt?
+											Repudiandae, neque qui.</div>
+										</p>
+									</div>
+									<ul class="team-members">
+										<li class="clearfix">
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="clearfix">
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="clearfix">
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="team-page-div">
+									<ul class="team-members">
+										<li class="clearfix">
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="clearfix">
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="clearfix">
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+
+											<div class="member-details">
+												<div class="yuyu">
+													<div class="member-info">
+														<h3>John Doe</h3>
+														<p>UI Designer</p>
+													</div>
+													<div class="lele">
+														<img src="http://www.webdirections.org/respond16/images/speakers/speaker-sara-soueidan.jpg"
+															alt="UI Designer">
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="team-overview">
+										<h2>Who Are We?</h2>
+										<a href="#">Meet the Entire Team</a>
+										<p>
+										<div class="team-page-info">Lorem ipsum dolor, sit amet consectetur adipisicing
+											elit. Adipisci quae
+											nesciunt officia! Autem, nam eum voluptatem, esse voluptatibus deleniti
+											tempora laboriosam sequi pariatur, explicabo itaque. Fuga, deserunt?
+											Repudiandae, neque qui.</div>
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<ul class="outer-nav">
+			<li class="is-active"><a>Home</a></li>
+			<li style="pointer-events: none; color: #a6a6a6">Events</li>
+			<li style="pointer-events: none; color: #a6a6a6"">Speakers</li>
+			<li style="pointer-events: none; color: #a6a6a6"">Timeline</li>
+			<li style="pointer-events: none; color: #a6a6a6"">Sponsors</li>
+			<li><a>About us</a></li>
+			<li style="pointer-events: none; color: #a6a6a6"">Team</li>
+		</ul>
+	</div>
+
+	<script src="src/js/imagesloaded.pkgd.min.js"></script>
+	<script src="src/js/revealer.js"></script>
+	<script src="src/js/demo.js"></script>
+	<script>
+		{
+			const DOM = {};
+			DOM.body = document.body;
+			DOM.gridElems = Array.from(document.querySelectorAll('.grid'));
+			new Slideshow(DOM.gridElems, {
+				hasTilt: true,
+				tilt: { maxTranslationX: 30, maxTranslationY: 30 }
+			});
+		}
+	</script>
+	<script src="src/js/three.min.js"></script>
+	<script src="src/js/postprocessing.min.js"></script>
+	<script src="src/js/InfiniteLights.js"></script>
+	<script src="src/js/Distortions.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="src/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+	<script src="src/js/vendors/hammer-2.0.8.js"></script>
+	<script src="src/js/vendors/velocity.min.js"></script>
+	<script src="src/js/functions.js"></script>
+	<script src="src/js/main.js"></script>
+	<script>
+		$(function () {
+			requestAnimationFrame(removeLoader, 3000);
+		});
+		function removeLoader() {
+			$("#preloader").velocity({
+				opacity: 0,
+			}, 400, function () {
+				$("#preloader").remove();
+				// Animation complete.
+			});
+		}
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.4/smooth-scrollbar.js"
+		integrity="sha512-s+Za9YjKdWb7RODdRba1tjg+6RqPPnB+c7mQywwtdvn59eZYNI53pLOsTp1M7dkznKcWw45tq6xAHh/i1kvL6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		$(function () {
+			const cursor = $("#cursor");
+			const follower = $("#follower");
+			const iframes = document.querySelectorAll("iframe");
+
+			$(document).on("mousemove", function (e) {
+				const x = e.clientX;
+				const y = e.clientY;
+				/* requestAnimationFrame(function () {
+					cursor.css({
+						"opacity": "1",
+						"top": y + "px",
+						"left": x + "px",
+						"transform": "translate(" + x + "px, " + y +"px)"
+					});
+				}) */
+				cursor.css({
+					"opacity": "1",
+					"top": y + "px",
+					"left": x + "px",
+				});
+				setTimeout(function () {
+					follower.css({
+						"opacity": "0.5",
+						"top": y + "px",
+						"left": x + "px"
+					});
+				}, 50);//following speed
+			});
+
+			//on a
+			$("a").on({
+				"mouseenter": function () {
+					cursor.addClass("active");
+					follower.addClass("active");
+				},
+				"mouseleave": function () {
+					cursor.removeClass("active");
+					follower.removeClass("active");
+				}
+			});
+
+			//on iframe
+			$("iframe").on({
+				"mouseenter": function () {
+					cursor.addClass("hide");
+					follower.addClass("hide");
+				},
+				"mouseleave": function () {
+					cursor.removeClass("hide");
+					follower.removeClass("hide");
+				}
+			});
+		});
+
+	</script>
 </body>
+
 </html>
