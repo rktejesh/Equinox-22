@@ -114,7 +114,6 @@ export default class Stage {
 
     lockScroll({ lock }) {
         const duration = lock ? 0 : 1.8
-
         const navigation = document.querySelector('.eventsHover')
         const display = lock ? 'none' : 'flex'
         navigation.style.display = display
