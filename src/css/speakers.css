@@ -19,17 +19,23 @@
 
 .speakers-header {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 100vh;
     flex-direction: column;
     text-align: center;
     user-select: none;
-    font-family: "Orbitron";
+    font-size: medium;
 }
 
 .speakers-header img {
-    padding: 3em;
+    margin: 6em;
+}
+
+.speakers-main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .speakers-header h1 {
@@ -39,7 +45,7 @@
 }
 
 .speakers-header h3 {
-    font-size: medium;
+    font-size: large;
 }
 
 .speakers-header p {
@@ -142,12 +148,16 @@
 }
 .speaker-img-wrapper .nm {
     font-family: "Stem Web", sans-serif;
-    font-size: 16px;
+    font-size: 2em;
     color: #ee394e;
     letter-spacing: 0.2em;
     font-weight: 700;
     text-transform: uppercase;
 }
+.speaker-img-wrapper .jb {
+    font-size: 2em;
+}
+
 .speaker-img-wrapper .speaker-img-wrapper-inner img:not(.hover-img) {
     opacity: 0.5;
 }
