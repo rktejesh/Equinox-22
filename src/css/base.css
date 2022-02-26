@@ -24,6 +24,7 @@ body {
     background-color: var(--color-bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
 }
 
 .demo-2 {
@@ -373,7 +374,7 @@ canvas {
         font-size: 50px;
     }
     .logo {
-        width: 302px;
+        width: 250px;
         height: 200px;
     }
 }
@@ -608,9 +609,10 @@ canvas {
 
 .team-page {
     display: flex;
-    flex-direction: row;
-    height: inherit;
+    flex-direction: column;
+    width: inherit;
     justify-content: center;
+    padding: 10%;
 }
 
 .team-page-div {
@@ -618,6 +620,7 @@ canvas {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .team-page-info {
@@ -645,7 +648,15 @@ canvas {
     margin-right: 5em;
     font-size: 1.8rem;
 }
-
+@media (max-width: 600px) {
+    .grid-content {
+        width: 100%;
+        margin-right: 0;
+        padding: 2em;
+        text-align: center;
+        font-size: small;
+    }
+}
 /* COuntDOwn */
 
 /* Play with speed and easing of the animation */
