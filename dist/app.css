@@ -257,7 +257,7 @@ a {
     pointer-events: none;
     grid-template-columns: 0% 100% 0%;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 'title demos links' '. . .' '. . .'; }
+    grid-template-areas: 'title demos links' '. . .' '. . .'; }
   .frame__title-wrap {
     grid-area: title;
     display: flex; }
@@ -287,7 +287,7 @@ a {
 /* MAIN
 --------------------------------------------------------- */
 body {
-  font-family: 'source-sans-pro', sans-serif;
+  font-family: "source-sans-pro", sans-serif;
   font-size: 1.4rem;
   font-weight: 400; }
 
@@ -324,9 +324,9 @@ body {
   z-index: -1;
   white-space: nowrap;
   font-size: calc(4vw + 8rem);
-  line-height: .975;
-  color: var(--textColor);
-  opacity: .1; }
+  line-height: 0.975;
+  color: #ffffff;
+  opacity: 0.3; }
 
 .line-ctn {
   display: block;
@@ -335,7 +335,7 @@ body {
 .btn-inline {
   display: inline-block;
   line-height: 1.5;
-  border-bottom: .1rem solid; }
+  border-bottom: 0.1rem solid; }
 
 .title {
   font-family: 'orpheuspro', serif;

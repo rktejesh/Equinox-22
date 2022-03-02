@@ -160,20 +160,21 @@ body {
     -webkit-transition: opacity 0.4s ease-in-out, visibility 0s 0.4s;
     transition: opacity 0.4s ease-in-out, visibility 0s 0.4s;
     overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 .section::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .section--is-active {
     opacity: 1;
     display: block;
     visibility: visible;
     z-index: 1;
-    -webkit-transition: opacity 0.4s ease-in-out 0.4s, display 0.4s ease-in-out 0.4s;
+    -webkit-transition: opacity 0.4s ease-in-out 0.4s,
+        display 0.4s ease-in-out 0.4s;
     transition: opacity 0.4s ease-in-out 0.4s, display 0.4s ease-in-out 0.4s;
 }
 
@@ -1672,22 +1673,14 @@ body {
 }
 
 /*  Team Starts */
-.team-members {
-    transform: rotate(-45deg);
-    flex-shrink: 0;
-}
-.team-members li > div {
-    float: left;
-    width: 20%;
-}
-
-.team-members li:nth-child(2n) > div:first-child {
-    margin-left: 20%;
-}
-
-.team-members li:last-child > div:first-child {
-    margin-left: 40%;
-}
+/* .team-page-div{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
+} */
 
 .member-details > div {
     background-color: #ddd;
@@ -1788,6 +1781,28 @@ body {
     display: inline-block;
 }
 
+.team-members {
+    transform: rotate(-45deg) translateY(-8%) translateX(15%);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+.team-members li > div {
+    float: left;
+    width: 20%;
+}
+
+.team-members li:nth-child(2n) > div:first-child {
+    margin-left: 20%;
+}
+
+.team-members li:last-child > div:first-child {
+    margin-left: 40%;
+}
+
 /* For centering elements - optional - Can use table,tablecell instead */
 .flex-center {
     display: flex;
@@ -1801,42 +1816,60 @@ body {
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 992px) {
-    .sm-no-flex {
-        display: block;
-    }
-    .sm-no-float {
-        float: none !important;
-    }
-    .sm-text-center {
-        text-align: center;
+@media only screen and (max-width: 1200px) {
+    .team-members li > div {
+        width: 15%;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 992px) {
     .team-members li {
         text-align: center;
     }
     .team-members li > div {
         float: none;
         display: inline-block;
-        width: 30%;
+        width: 15%;
+        margin: 3vh !important;
+    }
+    .team-members {
+        transform: rotate(0) translateY(25%);
+        padding-bottom: 3vh;
+    }
+    .member-details img {
+        transform: rotate(45deg) translate(0, 0);
+    }
+    .member-info {
+        transform: rotate(0);
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .team-members li {
+        text-align: center;
+    }
+    .team-members li > div {
+        float: none;
+        display: inline-block;
+        width: 10%;
         margin: 0 !important;
     }
     .team-members {
-        transform: rotate(0);
-    }
-    .member-details img {
-        transform: rotate(0) translate(0, 0);
-    }
-    .team-overview {
-        padding: 15px;
+        transform: rotate(0) translateY(35%);
+        padding-bottom: 1vh;
     }
 }
 
 @media only screen and (max-width: 399px) {
     .team-members li > div {
-        width: 48%;
+        float: none;
+        display: inline-block;
+        width: 8%;
+        margin: 0 !important;
+    }
+    .team-members {
+        transform: rotate(0) translateY(55%);
+        padding-bottom: 0.5vh;
     }
 }
 
@@ -1847,8 +1880,10 @@ body {
 .lele {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     transform: rotate(315deg) scale(1.5);
+    aspect-ratio: 1;
 }
 
 .yuyu:hover .lele {
     transform: translate(10%, -90%) rotate(235deg) scale(1.5);
+    aspect-ratio: 1.01;
 }
