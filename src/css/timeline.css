@@ -7,7 +7,6 @@
 }
 
 .about-timeline {
-    background-image: url("./2.jpg");
     background-color: #000000;
     background-size: cover;
     background-position: center;
@@ -17,6 +16,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.timeline-title {
+    color: #64c9ff;
+    font-size: 10rem;
+    font-weight: 700;
+    padding: 0 20px 20px auto;
+    word-wrap: normal;
+    font-family: orpheuspro, serif;
+    text-align: center;
+    word-wrap: normal;
 }
 
 .timeline-box h6 {
@@ -549,6 +559,10 @@
     .about-timeline {
         padding: 50px 0;
     }
+    .timeline-title {
+        font-size: 7rem;
+        padding-bottom: 2vh;
+    }
     .timeline-box h6 {
         font-size: 27px;
     }
@@ -615,6 +629,10 @@
 }
 
 @media screen and (min-width: 53em) {
+    .timeline-title {
+        font-size: 5rem;
+        padding-bottom: 2vh;
+    }
     .tl-content {
         position: relative;
         display: grid;
