@@ -17,11 +17,14 @@
     padding: 1em;
 }
 
+.speakers-wrapper {
+    height: 100vh;
+}
+
 .speakers-header {
     display: flex;
     justify-content: start;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
     text-align: center;
     user-select: none;
@@ -29,7 +32,8 @@
 }
 
 .speakers-header img {
-    margin: 6em;
+    margin: 3em;
+    height: 7em;
 }
 
 .speakers-main-title {
@@ -212,7 +216,7 @@
         padding: 1em;
     }
     .speakers-header h1 {
-        font-size: 12em;
+        font-size: 10em;
     }
 }
 
@@ -300,6 +304,12 @@
 }
 .skew-button:active:before {
     background-color: #030d1b;
+}
+
+.speakers-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @-webkit-keyframes swoosh {
