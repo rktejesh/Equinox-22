@@ -18,10 +18,10 @@
     flex-direction: column;
 }
 
-.timeline-title {
+.timeline-title h1 {
     color: #64c9ff;
-    font-size: 10rem;
-    font-weight: 700;
+    font-size: 15rem;
+    font-weight: 1400;
     padding: 0 20px 20px auto;
     word-wrap: normal;
     font-family: orpheuspro, serif;
@@ -329,6 +329,9 @@
 /*==============Responsive==============*/
 
 @media screen and (max-width: 1800px) {
+    .timeline-title h1 {
+        font-size: 10rem;
+    }
     .timeline-box {
         max-width: 460px;
     }
@@ -343,6 +346,9 @@
 }
 
 @media screen and (max-width: 1600px) {
+    .timeline-title h1 {
+        font-size: 10rem;
+    }
     .timeline-row:first-child .timeline-box:first-child {
         width: 38%;
     }
@@ -400,6 +406,9 @@
 }
 
 @media screen and (max-width: 1199px) {
+    .timeline-title h1 {
+        font-size: 6rem;
+    }
     .about-timeline {
         padding: 50px 0 60px;
     }
@@ -437,6 +446,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .timeline-title h1 {
+        font-size: 5rem;
+    }
     .corner {
         display: none;
     }
@@ -556,6 +568,9 @@
 }
 
 @media screen and (max-width: 640px) {
+    .timeline-title h1 {
+        font-size: 4rem;
+    }
     .about-timeline {
         padding: 50px 0;
     }

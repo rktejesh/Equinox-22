@@ -446,7 +446,7 @@ body {
 }
 
 .page-title {
-  position: fixed;
+  position: relative;
   top: 9rem;
   left: 5vw;
   z-index: -1;
@@ -454,7 +454,7 @@ body {
   font-size: calc(4vw + 8rem);
   line-height: 0.975;
   color: #ffffff;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .line-ctn {
