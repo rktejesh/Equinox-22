@@ -19,6 +19,9 @@
 
 .speakers-wrapper {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .speakers-header {
@@ -32,8 +35,8 @@
 }
 
 .speakers-header img {
-    margin: 3em;
-    height: 7em;
+    margin: 2em;
+    height: 10em;
 }
 
 .speakers-main-title {
@@ -43,7 +46,7 @@
 }
 
 .speakers-header h1 {
-    font-family: 'Bolderist', cursive;
+    font-family: 'orpheuspro', serif;
     padding: auto;
     font-size: 3em;
 }
@@ -182,7 +185,7 @@
         padding: 1em;
     }
     .speakers-header h1 {
-        font-size: 7em;
+        font-size: 5em;
     }
 }
 
@@ -199,7 +202,7 @@
         padding: 1em;
     }
     .speakers-header h1 {
-        font-size: 8em;
+        font-size: 6em;
     }
 }
 
@@ -216,7 +219,7 @@
         padding: 1em;
     }
     .speakers-header h1 {
-        font-size: 10em;
+        font-size: 8em;
     }
 }
 
@@ -256,7 +259,8 @@
 }
 
 .skew-button span a {
-    margin: 25px;
+    margin: 45px;
+    font-size: medium;
 }
 
 .skew-button:before,
