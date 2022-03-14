@@ -356,7 +356,9 @@ a {
         grid-template-columns: 0% 100% 0%;
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
-        grid-template-areas: 'title demos links' '. . .' '. . .';
+        grid-template-areas: 'title demos links'
+ '. . .'
+ '. . .';
   }
   .frame__title-wrap {
     -ms-grid-row: 1;
@@ -446,15 +448,15 @@ body {
 }
 
 .page-title {
-  position: fixed;
-  top: 9rem;
+  position: absol;
+  top: 4rem;
   left: 5vw;
   z-index: -1;
   white-space: nowrap;
   font-size: calc(4vw + 8rem);
   line-height: 0.975;
   color: #ffffff;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .line-ctn {
