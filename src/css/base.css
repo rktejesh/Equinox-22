@@ -383,7 +383,7 @@ canvas {
 
 :root {
     --loader-size: 150px;
-    --text-color: #cecece; /* Fill data-text */
+    --text-color: #bfd9f3; /* Fill data-text */
     --color-one: #2979ff;
     --color-two: #ff1744;
     --color-three: #ffff8d;
@@ -421,13 +421,13 @@ canvas {
 
 .Loader::after {
     content: attr(data-text);
-    color: #cecece;
+    color: #ffffff;
     color: var(--text-color, #cecece);
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: calc(70% + 0.1vw);
+    transform: translate(-48%, -50%);
+    font-size: calc(70% + 0.5vw);
     text-transform: uppercase;
     letter-spacing: 5px;
 }
