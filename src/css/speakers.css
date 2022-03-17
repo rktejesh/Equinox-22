@@ -22,9 +22,9 @@
 }
 
 .speakers-title h2 {
-    font-weight: 200;
+    font-weight: 600;
     font-size: 2em;
-    color: #ee394eb9;
+    color: #ee394eb7;
     letter-spacing: 0.1em;
     transform: scale(1, 0.8) !important;
     text-transform: uppercase;
