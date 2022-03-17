@@ -437,11 +437,17 @@ body {
 	opacity: 0;
 }
 
+.mySwiper {
+	display: none;
+}
+
 @media screen and (max-width: 1024px) {
 	.grid-section {
 		display: none;
 	}
-
+	.grid-content {
+		margin-right: 0%;
+	}
 	.message {
 		display: block;
 	}
@@ -477,5 +483,11 @@ body {
 
 	.grid .grid__item--title {
 		display:none;
+	}
+	.mySwiper {
+		display: block;
+	}
+	.about-us-page {
+		flex-wrap: wrap;
 	}
 }

@@ -17,7 +17,7 @@ const shaders = [
     gooeyShader,
     waveShader,
     revealShader,
-    revealShader,
+    waveShader,
 ]
 
 const durations = [
