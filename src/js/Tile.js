@@ -17,6 +17,7 @@ export default class Tile {
             text: $el.querySelectorAll('.tile__title, .tile__cta'),
             title: $el.querySelector('.tile__title'),
             desc: $el.querySelectorAll('p'),
+            weblink: $el.querySelectorAll('.tile__link'),
         }
 
         this.duration = duration

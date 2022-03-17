@@ -61,7 +61,6 @@ export default class Stage {
             console.log(this.Scroll.scrollLeft)
             console.log(this.$tiles) */
             for (let i = 0; i < this.$tiles.length; i++) {
-                console.log(this.Scroll.isVisible(this.$tiles[i]))
                 if (this.Scroll.isVisible(this.$tiles[i]) && i < this.$tiles.length) {
                     this.Scroll.scrollIntoView(
                         this.$tiles[i + 1], {
@@ -75,7 +74,6 @@ export default class Stage {
 
         document.getElementsByClassName('eventsHover-1')[0].addEventListener('click', () => {
             for (let i = this.$tiles.length - 1; i >= 0; i--) {
-                console.log(this.Scroll.isVisible(this.$tiles[i]))
                 if (this.Scroll.isVisible(this.$tiles[i]) && i > 0) {
                     this.Scroll.scrollIntoView(
                         this.$tiles[i - 2], {

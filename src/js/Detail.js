@@ -125,8 +125,8 @@ export default class DetailView {
         if (!shouldOpen) return
         this.$els.title.innerText = target.$els.title.outerText
         const a = target.$els.desc
+        this.$els.button.href = target.$els.weblink[0].innerText
         this.$els.text.innerHTML = ''
-        console.log(a)
         for (let i = 0; i < a.length; i++) {
             this.$els.text.append(a[i])
         }

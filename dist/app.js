@@ -71994,8 +71994,8 @@ var DetailView = /*#__PURE__*/function () {
       if (!shouldOpen) return;
       this.$els.title.innerText = target.$els.title.outerText;
       var a = target.$els.desc;
+      this.$els.button.href = target.$els.weblink[0].innerText;
       this.$els.text.innerHTML = '';
-      console.log(a);
 
       for (var i = 0; i < a.length; i++) {
         this.$els.text.append(a[i]);
@@ -72277,8 +72277,6 @@ var Stage = /*#__PURE__*/function () {
         console.log(this.Scroll.scrollLeft)
         console.log(this.$tiles) */
         for (var i = 0; i < _this2.$tiles.length; i++) {
-          console.log(_this2.Scroll.isVisible(_this2.$tiles[i]));
-
           if (_this2.Scroll.isVisible(_this2.$tiles[i]) && i < _this2.$tiles.length) {
             _this2.Scroll.scrollIntoView(_this2.$tiles[i + 1], {
               offsetLeft: 100
@@ -72290,8 +72288,6 @@ var Stage = /*#__PURE__*/function () {
       });
       document.getElementsByClassName('eventsHover-1')[0].addEventListener('click', function () {
         for (var i = _this2.$tiles.length - 1; i >= 0; i--) {
-          console.log(_this2.Scroll.isVisible(_this2.$tiles[i]));
-
           if (_this2.Scroll.isVisible(_this2.$tiles[i]) && i > 0) {
             _this2.Scroll.scrollIntoView(_this2.$tiles[i - 2], {
               offsetLeft: 100
@@ -72419,7 +72415,8 @@ var Tile = /*#__PURE__*/function () {
       link: $el.querySelector('a'),
       text: $el.querySelectorAll('.tile__title, .tile__cta'),
       title: $el.querySelector('.tile__title'),
-      desc: $el.querySelectorAll('p')
+      desc: $el.querySelectorAll('p'),
+      weblink: $el.querySelectorAll('.tile__link')
     };
     this.duration = duration;
     this.mainImage = this.$els.el.querySelector('img');
