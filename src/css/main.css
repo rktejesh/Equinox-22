@@ -1714,7 +1714,7 @@ body {
 
 .member-info h3 {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     top: 0;
 }
@@ -1747,13 +1747,13 @@ body {
 }
 
 .team-members {
-    transform: rotate(-45deg) translateY(-5%) translateX(10%) scale(0.9);
+    transform: rotate(-45deg) translateY(-5%) translateX(10%) scale(0.8);
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
 }
 .team-members li > div {
     float: left;
@@ -1850,8 +1850,9 @@ body {
 
 .lele {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transform: rotate(315deg) scale(1.41);
+    transform: rotate(315deg) scale(1.4);
     aspect-ratio: 1;
+
 }
 
 .yuyu:hover .lele {

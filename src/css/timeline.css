@@ -6,8 +6,18 @@
     padding: 0 80px;
 }
 
+.back-logo {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 50%;
+    height: auto;
+}
+
 .about-timeline {
-    background-image: url(../img/timelineback.jpg);
+    /* background-image: url(../img/timelineback.jpg); */
     background-attachment: fixed;
     background-color: #000000;
     background-size: cover;
@@ -37,7 +47,7 @@
     color: #8e53fd;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
-    background-color: #060610da;
+    background-color: #000000b9;
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -46,6 +56,7 @@
     margin-top: 0;
     text-align: center;
     transform: translate(0, -50%);
+    border-radius: 10px;
 }
 
 .timeline-box p {
