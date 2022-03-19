@@ -1,0 +1,109 @@
+:root {
+  --blue: #0a0c10;
+  --blue-sudo: #1e242f;
+  --white: #fff;
+}
+
+.main-section {
+  max-width: 1400px;
+  padding: 0 30px;
+  margin: 120px auto;
+  display: none;
+}
+
+.main-section section + section {
+  margin-top: 120px;
+}
+
+.main-section .grid-events {
+  display: grid;
+  grid-column-gap: 60px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.main-section .grid-events-alternate {
+  grid-template-columns: 1fr 2fr;
+}
+
+.main-section .big-text {
+  max-width: 800px;
+  margin-left: auto;
+  font-size: clamp(16px, 1vw, 24px);
+}
+
+.main-section figure {
+  position: relative;
+  box-shadow: -1rem 1rem 3rem -2rem rgba(0, 0, 0, 0.5);
+}
+
+.main-section figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--blue-sudo);
+  transition: clip-path 0.3s;
+}
+
+.main-section figure img {
+  display: block;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.6s 0.3s;
+  max-width: 100%;
+}
+
+.main-section figure figcaption {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--blue);
+  mix-blend-mode: overlay;
+  transition: clip-path 0.3s 0.9s;
+}
+
+.main-section figure figcaption:hover {
+  transform: scale(1.1);
+  transition: ease-in-out;
+}
+
+.main-section figure::before,
+.main-section figure figcaption {
+  clip-path: inset(0 0 0 100%);
+}
+
+.main-section figure.is-animated::before,
+.main-section figure.is-animated img,
+.main-section figure.is-animated figcaption {
+  clip-path: inset(0);
+}
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 1000px) {
+  .hero-section span {
+    display: block;
+  }
+
+  .main-section {
+    margin: 60px auto;
+  }
+
+  .main-section section + section {
+    margin-top: 60px;
+  }
+
+  .main-section .grid-events {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+
+  .main-section .grid-events-alternate figure {
+    order: -1;
+  }
+}

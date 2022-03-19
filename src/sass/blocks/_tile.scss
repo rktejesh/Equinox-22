@@ -8,7 +8,6 @@
 
     &::before {
         content: '';
-
         display: block;
         padding-top: 136.36%;
     }
@@ -72,5 +71,9 @@
 }
 
 .tile__desc {
+    display: none;
+}
+
+.tile__link {
     display: none;
 }

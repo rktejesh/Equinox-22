@@ -17,7 +17,7 @@ const shaders = [
     gooeyShader,
     waveShader,
     revealShader,
-    waveShader,
+    /* waveShader, */
 ]
 
 const durations = [
@@ -26,7 +26,7 @@ const durations = [
     0.5,
     0.8,
     0.8,
-    0.8,
+    /* 0.8, */
 ]
 
 export default class Scene {

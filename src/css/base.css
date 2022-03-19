@@ -605,6 +605,9 @@ canvas {
     .mainEvents {
         display: none;
     }
+    .main-section {
+        display: block !important;
+    }
 }
 
 .team-page {

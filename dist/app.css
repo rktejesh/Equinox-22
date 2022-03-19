@@ -550,6 +550,9 @@ body {
 .tile__desc {
   display: none; }
 
+.tile__link {
+  display: none; }
+
 .wrapper {
   margin-top: 3%;
   font-family: 'Electrolize', sans-serif;

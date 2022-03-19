@@ -71994,8 +71994,8 @@ var DetailView = /*#__PURE__*/function () {
       if (!shouldOpen) return;
       this.$els.title.innerText = target.$els.title.outerText;
       var a = target.$els.desc;
+      this.$els.button.href = target.$els.weblink[0].innerText;
       this.$els.text.innerHTML = '';
-      console.log(a);
 
       for (var i = 0; i < a.length; i++) {
         this.$els.text.append(a[i]);
@@ -72073,8 +72073,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 var perspective = 800;
-var shaders = [_glsl_trippyShader_glsl__WEBPACK_IMPORTED_MODULE_4__["default"], _glsl_shapeShader_glsl__WEBPACK_IMPORTED_MODULE_5__["default"], _glsl_gooeyShader_glsl__WEBPACK_IMPORTED_MODULE_7__["default"], _glsl_waveShader_glsl__WEBPACK_IMPORTED_MODULE_8__["default"], _glsl_revealShader_glsl__WEBPACK_IMPORTED_MODULE_6__["default"], _glsl_waveShader_glsl__WEBPACK_IMPORTED_MODULE_8__["default"]];
-var durations = [0.5, 0.5, 0.5, 0.8, 0.8, 0.8];
+var shaders = [_glsl_trippyShader_glsl__WEBPACK_IMPORTED_MODULE_4__["default"], _glsl_shapeShader_glsl__WEBPACK_IMPORTED_MODULE_5__["default"], _glsl_gooeyShader_glsl__WEBPACK_IMPORTED_MODULE_7__["default"], _glsl_waveShader_glsl__WEBPACK_IMPORTED_MODULE_8__["default"], _glsl_revealShader_glsl__WEBPACK_IMPORTED_MODULE_6__["default"]
+/* waveShader, */
+];
+var durations = [0.5, 0.5, 0.5, 0.8, 0.8
+/* 0.8, */
+];
 
 var Scene = /*#__PURE__*/function () {
   function Scene($scene) {
@@ -72277,8 +72281,6 @@ var Stage = /*#__PURE__*/function () {
         console.log(this.Scroll.scrollLeft)
         console.log(this.$tiles) */
         for (var i = 0; i < _this2.$tiles.length; i++) {
-          console.log(_this2.Scroll.isVisible(_this2.$tiles[i]));
-
           if (_this2.Scroll.isVisible(_this2.$tiles[i]) && i < _this2.$tiles.length) {
             _this2.Scroll.scrollIntoView(_this2.$tiles[i + 1], {
               offsetLeft: 100
@@ -72290,8 +72292,6 @@ var Stage = /*#__PURE__*/function () {
       });
       document.getElementsByClassName('eventsHover-1')[0].addEventListener('click', function () {
         for (var i = _this2.$tiles.length - 1; i >= 0; i--) {
-          console.log(_this2.Scroll.isVisible(_this2.$tiles[i]));
-
           if (_this2.Scroll.isVisible(_this2.$tiles[i]) && i > 0) {
             _this2.Scroll.scrollIntoView(_this2.$tiles[i - 2], {
               offsetLeft: 100
@@ -72419,7 +72419,8 @@ var Tile = /*#__PURE__*/function () {
       link: $el.querySelector('a'),
       text: $el.querySelectorAll('.tile__title, .tile__cta'),
       title: $el.querySelector('.tile__title'),
-      desc: $el.querySelectorAll('p')
+      desc: $el.querySelectorAll('p'),
+      weblink: $el.querySelectorAll('.tile__link')
     };
     this.duration = duration;
     this.mainImage = this.$els.el.querySelector('img');
