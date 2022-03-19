@@ -72073,8 +72073,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 var perspective = 800;
-var shaders = [_glsl_trippyShader_glsl__WEBPACK_IMPORTED_MODULE_4__["default"], _glsl_shapeShader_glsl__WEBPACK_IMPORTED_MODULE_5__["default"], _glsl_gooeyShader_glsl__WEBPACK_IMPORTED_MODULE_7__["default"], _glsl_waveShader_glsl__WEBPACK_IMPORTED_MODULE_8__["default"], _glsl_revealShader_glsl__WEBPACK_IMPORTED_MODULE_6__["default"], _glsl_waveShader_glsl__WEBPACK_IMPORTED_MODULE_8__["default"]];
-var durations = [0.5, 0.5, 0.5, 0.8, 0.8, 0.8];
+var shaders = [_glsl_trippyShader_glsl__WEBPACK_IMPORTED_MODULE_4__["default"], _glsl_shapeShader_glsl__WEBPACK_IMPORTED_MODULE_5__["default"], _glsl_gooeyShader_glsl__WEBPACK_IMPORTED_MODULE_7__["default"], _glsl_waveShader_glsl__WEBPACK_IMPORTED_MODULE_8__["default"], _glsl_revealShader_glsl__WEBPACK_IMPORTED_MODULE_6__["default"]
+/* waveShader, */
+];
+var durations = [0.5, 0.5, 0.5, 0.8, 0.8
+/* 0.8, */
+];
 
 var Scene = /*#__PURE__*/function () {
   function Scene($scene) {
