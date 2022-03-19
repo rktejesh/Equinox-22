@@ -1850,8 +1850,9 @@ body {
 
 .lele {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transform: rotate(315deg) scale(1.41);
+    transform: rotate(315deg) scale(1.4);
     aspect-ratio: 1;
+
 }
 
 .yuyu:hover .lele {
