@@ -1673,9 +1673,16 @@ body {
 }
 
 /*  Team Starts */
+
+.team-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../img/timelineback.jpg);
+}
+
 .member-details > div {
     background-color: #131313;
     margin: 5px;
+    border: #4a8df1 dashed 1px;
     /* -webkit-box-shadow: 0px 0px 5px 0px #ff3a54d2;
     -moz-box-shadow: 0px 0px 5px 0px #ff3a54b4;
     box-shadow: 0px 0px 5px 0px #ff3a54af; */
@@ -1708,7 +1715,7 @@ body {
 }
 
 .member-info h3,
-.member-info p{
+.member-info p {
     margin: 0;
     color: #ff435c;
     position: relative;
