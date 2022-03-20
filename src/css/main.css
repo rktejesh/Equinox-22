@@ -1674,8 +1674,11 @@ body {
 
 /*  Team Starts */
 .member-details > div {
-    background-color: #ddd;
-    margin: 10px;
+    background-color: #131313;
+    margin: 5px;
+    /* -webkit-box-shadow: 0px 0px 5px 0px #ff3a54d2;
+    -moz-box-shadow: 0px 0px 5px 0px #ff3a54b4;
+    box-shadow: 0px 0px 5px 0px #ff3a54af; */
 }
 .member-details img {
     transform: rotate(90deg) translate(0, 0);
@@ -1705,9 +1708,9 @@ body {
 }
 
 .member-info h3,
-.member-info p {
+.member-info p{
     margin: 0;
-    color: #000;
+    color: #ff435c;
     position: relative;
     opacity: 1;
 }
@@ -1723,7 +1726,7 @@ body {
     font-weight: 300;
     font-size: 12px;
     bottom: 0;
-    color: #494949;
+    color: #ffffff;
 }
 
 .member-details > div:after {
@@ -1747,13 +1750,13 @@ body {
 }
 
 .team-members {
-    transform: rotate(-45deg) translateY(-5%) translateX(10%) scale(0.8);
+    transform: rotate(-45deg) translateY(-5%) translateX(10%) scale(0.9);
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2vh;
+    /* padding-bottom: 2vh; */
 }
 .team-members li > div {
     float: left;
@@ -1850,13 +1853,12 @@ body {
 
 .lele {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transform: rotate(315deg) scale(1.4);
+    transform: rotate(315deg) scale(1.5);
     aspect-ratio: 1;
-
 }
 
 .yuyu:hover .lele {
-    transform: translate(10%, -90%) rotate(235deg) scale(1.4);
+    transform: translate(10%, -90%) rotate(235deg) scale(1.5);
     aspect-ratio: 1;
 }
 
