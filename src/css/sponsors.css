@@ -1,0 +1,9 @@
+.sponsors-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.sponsors-main-title {
+    font-family: "orpheuspro", serif;
+    font-size: larger;
+}

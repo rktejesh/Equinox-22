@@ -361,6 +361,8 @@ a {
  '. . .';
   }
   .frame__title-wrap {
+    grid-row: 1;
+    grid-column: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
@@ -379,6 +381,8 @@ a {
   }
   .frame__demos {
     margin: 0;
+    grid-row: 1;
+    grid-column: 2;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: demos;
@@ -388,6 +392,8 @@ a {
   .frame__links {
     padding: 0;
     grid-column: -1 / 1;
+    grid-row: 1;
+    grid-column: 2;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: demos;
@@ -811,7 +817,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 100%;
+  width: min-content;
 }
 
 .bttn {

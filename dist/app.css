@@ -321,7 +321,7 @@ body {
   position: absolute;
   top: 4rem;
   left: 5vw;
-  z-index: 50;
+  z-index: -1;
   white-space: nowrap;
   font-size: calc(4vw + 8rem);
   line-height: 0.975;
@@ -560,7 +560,7 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 100%; }
+  width: min-content; }
 
 .bttn {
   display: inline-block;
