@@ -5,5 +5,38 @@
 
 .sponsors-main-title {
     font-family: "orpheuspro", serif;
-    font-size: larger;
+    font-size: 8vh;
+    margin: 2%;
+}
+
+.sponsors-sub-title {
+    font-family: "orpheuspro", serif;
+    font-size: 5vh;
+    margin: 2%;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 3rem;
+    margin: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.sponsors-grid > div {
+    background: white;
+    position: relative;
+}
+.sponsors-grid > div::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.sponsors-grid > div img {
+    position: absolute;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    padding: 3rem;
+    transform: translate(-50%, -50%);
 }
