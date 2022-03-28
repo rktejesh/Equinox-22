@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import '../sass/styles.scss'
 import Stage from './Stage'
 import Layout from './Layout'

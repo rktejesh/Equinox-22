@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-console */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable max-len */

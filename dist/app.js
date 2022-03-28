@@ -72783,6 +72783,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Stage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Stage */ "./src/js/Stage.js");
 /* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout */ "./src/js/Layout.js");
+/* eslint-disable linebreak-style */
 
 
 
