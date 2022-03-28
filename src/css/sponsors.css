@@ -40,3 +40,110 @@
     padding: 3rem;
     transform: translate(-50%, -50%);
 }
+
+.sponsor--section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 3em;
+}
+.sponsor__card img{
+    width: 16rem;
+}
+.sponsor__row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+}
+.sponsor__card{
+    height: 8rem;
+    max-height: fit-content;
+    width: 26rem;
+    background-color: #fff;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+}
+.sponsor__card:hover{
+    transform: scale(1.08);
+}
+  
+.sponsor__card.noback img{
+    width: 10rem !important;
+    border-radius: 2px;
+}
+.sponsor__card.noback{
+    background-color: transparent;
+    width: fit-content;
+    margin-top: 2rem;
+    height: 10rem;
+}
+.sponsor__row2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:800px) and ( max-width:1145px){
+    .sponsor__row{
+      width: 90%;
+    }
+    .sponsor__card {
+      width: 20rem;
+    }
+  }
+  @media screen and (min-width:1145px){
+    .sponsor__card {
+      width: 22rem;
+      height: 7rem;
+    }
+    @media screen and (max-width:750px){
+        .sponsor__card.noback img{
+          width: 100% !important;
+          height: auto !important;
+        }
+        .sponsor__card.noback{
+          background-color: transparent;
+          width: 100%;
+          display: flex;
+          margin-left: 0px;
+          justify-content: center;
+          align-items: center;
+          max-height: 120px;
+        }
+        .anchor a{
+          width: 30%;
+          margin-top: 20px;
+        }
+        .sponsor__heading h1{
+          font-size: 2.5rem;
+        }
+      }
+      
+      @media screen  and (max-width:450px){
+        .sponsor__card{
+          width: 22rem;
+        }
+        .sponsor__column{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      }
+      @media screen and (min-width:300px) and (max-width:400px){
+        .sponsor__card{
+          width: 19rem;
+        }
+        .anchor{
+          width: 90%;
+        }
+      }
