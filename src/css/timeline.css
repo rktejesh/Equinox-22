@@ -7,13 +7,12 @@
 }
 
 .back-logo {
-    position: fixed;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 0%;
     z-index: 0;
-    width: 50%;
+    width: 5rem;
     height: auto;
+    margin: 1rem;
 }
 
 .about-timeline {
