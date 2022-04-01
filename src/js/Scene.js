@@ -13,19 +13,23 @@ const perspective = 800
 
 const shaders = [
     trippyShader,
-    shapeShader,
+    trippyShader,
+    trippyShader,
+    trippyShader,
+    trippyShader,
+    /* shapeShader,
     gooeyShader,
     waveShader,
     revealShader,
-    /* waveShader, */
+    waveShader, */
 ]
 
 const durations = [
     0.5,
     0.5,
     0.5,
-    0.8,
-    0.8,
+    0.5,
+    0.5,
     /* 0.8, */
 ]
 
