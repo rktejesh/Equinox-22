@@ -6,8 +6,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/timelineback.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ),
+    url(../img/timelineback.jpg);
+    backdrop-filter: brightness(60%);
 }
+
 .team__cards {
     display: flex;
     align-items: center;
@@ -49,9 +56,6 @@
     margin: 1rem;
     align-items: center;
     justify-content: center;
-}
-.team__row:last-child {
-    margin-right: 5rem;
 }
 .team__heading {
     margin: 0 auto;
@@ -162,5 +166,5 @@
     font-family: "Audiowide";
     font-size: 15vw;
     color: #fff;
-    opacity: 0.2;
+    opacity: 0.1;
 }

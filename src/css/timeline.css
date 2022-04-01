@@ -16,7 +16,13 @@
 }
 
 .about-timeline {
-    /* background-image: url(../img/timelineback.jpg); */
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url(../img/timelineback.jpg);
+    backdrop-filter: brightness(60%);
     background-attachment: fixed;
     background-color: #000000;
     background-size: cover;
