@@ -22,7 +22,7 @@
             rgba(0, 0, 0, 0.3)
         ),
         url(../img/timelineback.jpg);
-    backdrop-filter: brightness(60%);
+    /* backdrop-filter: brightness(60%); */
     background-attachment: fixed;
     background-color: #000000;
     background-size: cover;
@@ -249,7 +249,7 @@
     /* background: #00000000; min-height: 318px; */
     /* neon border */
     padding: 0;
-    margin-bottom: 90px;
+    margin-bottom: 120px;
 }
 /*.timeline-row:after{content: ''; position: absolute; left: 50%; top: 74.5px; height: 1px; width: 91%; background-color: #aaa; transform: translateX(-50%);top: 0;} .timeline-row .verticle-line { margin: 0; padding: 0; width: 1px; border-right: 1px solid #aaa; height:calc(100% - 126px); position: absolute; top: calc( 50% + 75px );; right: 0; margin: auto 0; bottom: unset; transform: translateY(-50%);top: 50%; } */
 .timeline-row:first-child::after {
@@ -633,8 +633,6 @@
     position: fixed;
     width: 250px;
     height: 200px;
-    top: 0;
-    left: 0;
     pointer-events: none;
     opacity: 0;
     z-index: 999;
