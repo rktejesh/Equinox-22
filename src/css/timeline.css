@@ -6,6 +6,10 @@
     padding: 0 80px;
 }
 
+.flagship{
+    color: rgb(255, 0, 0) !important;
+}
+
 .back-logo {
     top: 0%;
     left: 0%;
