@@ -61,9 +61,9 @@
   padding: 10px;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--white);
-  background: var(--blue);
-  mix-blend-mode: overlay;
+  color: #000;
+  background: #fff;
+ /*  mix-blend-mode: overlay; */
   transition: clip-path 0.3s 0.9s;
 }
 
