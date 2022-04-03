@@ -584,21 +584,15 @@ canvas {
 .eventsHover-1 {
     width: 15%;
     height: inherit;
-    pointer-events: all;
-}
-
-.eventsHover-1:hover {
-    cursor: pointer;
-}
-
-.eventsHover-2:hover {
-    cursor: pointer;
+    pointer-events: none;
+    /* cursor: url('../img/arrow-left.png'), auto; */
 }
 
 .eventsHover-2 {
     width: 15%;
     height: inherit;
-    pointer-events: all;
+    pointer-events: none;
+    /* cursor: url('../img/arrow-right.png'), auto; */
 }
 
 @media only screen and (max-width: 768px) {
