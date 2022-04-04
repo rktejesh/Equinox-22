@@ -17,6 +17,9 @@ const shaders = [
     trippyShader,
     trippyShader,
     trippyShader,
+    trippyShader,
+    trippyShader,
+    trippyShader,
     /* shapeShader,
     gooeyShader,
     waveShader,
@@ -25,6 +28,9 @@ const shaders = [
 ]
 
 const durations = [
+    0.5,
+    0.5,
+    0.5,
     0.5,
     0.5,
     0.5,
