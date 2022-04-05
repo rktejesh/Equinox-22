@@ -323,7 +323,7 @@ body {
 
 .page-title {
   position: absolute;
-  top: 4rem;
+  top: 8rem;
   left: 5vw;
   z-index: -1;
   white-space: nowrap;

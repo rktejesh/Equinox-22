@@ -213,8 +213,23 @@ body {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: end;
+    justify-content: space-between;
+    background-color: #000;
     z-index: 10;
+}
+
+.header-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: inherit;
+}
+
+.header-child-text {
+    font-size: 2rem;
+    color: #fff; 
+    margin: 1rem; 
+    font-family: 'Futura LT', sans-serif;
 }
 
 .header--logo {

@@ -65,7 +65,8 @@
     margin: 3em;
 }
 .sponsor__card img{
-    width: 16rem;
+    /* width: 16rem; */
+    height: 4rem;
 }
 .sponsor__row{
     display: flex;
