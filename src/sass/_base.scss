@@ -89,7 +89,7 @@ a {
 a:hover,
 a:focus {
     @include hover(false) {
-        color: var(--color-link-hover);
+        /* color: var(--color-link-hover); */
         outline: none;
     }
 }
