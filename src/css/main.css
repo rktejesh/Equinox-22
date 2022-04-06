@@ -232,12 +232,13 @@ body {
     margin: 1rem; 
     font-family: 'Futura LT', sans-serif;
     text-align: center;
+    font-weight: 600;
 }
 
 .header-child-text p {
     padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background-color: #222021;
     margin-right: 5rem;
     font-weight: 600;
