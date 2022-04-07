@@ -60,7 +60,7 @@
         margin-left: 5vw;
     }
 
-    @for $i from 1 to 7 {
+    @for $i from 1 to 9 {
         $offset: if($i % 2 == 0, -1, 1);
 
         &:nth-child(#{$i}) {
