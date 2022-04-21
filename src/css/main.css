@@ -1581,7 +1581,7 @@ body {
 .outer-nav > li {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    font-size: 55px;
+    font-size: 6.45vh;
     font-weight: 900;
     color: #fff;
     opacity: 0;
