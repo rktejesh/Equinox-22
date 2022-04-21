@@ -72902,14 +72902,17 @@ var HorizontalScrollPlugin = /*#__PURE__*/function (_Scrollbar$ScrollbarP) {
   _createClass(HorizontalScrollPlugin, [{
     key: "transformDelta",
     value: function transformDelta(delta, fromEvent) {
-      if (this.shouldInvertDelta(fromEvent)) {
-        return {
-          x: delta.y,
-          y: delta.y
-        };
+      if (!/wheel/.test(fromEvent.type)) {
+        return delta;
       }
 
-      return delta;
+      var x = delta.x,
+          y = delta.y;
+      return {
+        y: 0,
+        x: Math.abs(x) > Math.abs(y) ? x : y // x: Math.sign(x || y) * Math.sqrt(x*x + y*y),
+
+      };
     }
   }, {
     key: "shouldInvertDelta",

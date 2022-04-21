@@ -3,14 +3,17 @@ import Scrollbar from 'smooth-scrollbar'
 export default class HorizontalScrollPlugin extends Scrollbar.ScrollbarPlugin {
 
     transformDelta(delta, fromEvent) {
-        if (this.shouldInvertDelta(fromEvent)) {
-            return {
-                x: delta.y,
-                y: delta.y,
-            }
+        if (!/wheel/.test(fromEvent.type)) {
+            return delta
         }
 
-        return delta
+        const { x, y } = delta
+
+        return {
+            y: 0,
+            x: Math.abs(x) > Math.abs(y) ? x : y,
+            // x: Math.sign(x || y) * Math.sqrt(x*x + y*y),
+        }
     }
 
     shouldInvertDelta(fromEvent) {
