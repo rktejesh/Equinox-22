@@ -39,8 +39,22 @@ $(document).ready(function () {
 
             updateNavs(nextPos)
             updateContent(curPos, nextPos, lastItem)
+            window.location.hash = $this.attr('id')
         }
     })
+
+    if(window.location.hash !== '') {
+        const $this = $(window.location.hash)
+        if (!($(this).hasClass('is-active'))) {
+            const curActive = $this.parent().find('.is-active')
+            const curPos = $this.parent().children().index(curActive)
+            const nextPos = $this.parent().children().index($this)
+            const lastItem = $(this).parent().children().length - 1
+
+            updateNavs(nextPos)
+            updateContent(curPos, nextPos, lastItem)
+        }
+    }
 
     $('.cta').click(() => {
         const curActive = $('.side-nav').find('.is-active')
