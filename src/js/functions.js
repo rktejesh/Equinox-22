@@ -116,6 +116,10 @@ $(document).ready(function () {
         })
     }
 
+    function outerNavKb() {
+        
+    }
+
     function workSlider() {
         $('.slider--prev, .slider--next').click(function () {
             const $this = $(this)
