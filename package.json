@@ -47,6 +47,6 @@
     "horwheel": "^1.0.1",
     "optiscroll": "^3.2.1",
     "smooth-scrollbar": "^8.4.0",
-    "three": "^0.137.0"
+    "three": "^0.141.0"
   }
 }
