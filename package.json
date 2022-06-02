@@ -21,7 +21,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.15.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "file-loader": "^4.2.0",
+    "file-loader": "^6.2.0",
     "glsl-noise": "0.0.0",
     "glsl-voronoi-noise": "^1.2.2",
     "glsl-worley": "^1.0.2",
