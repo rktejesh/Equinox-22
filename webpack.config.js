@@ -85,10 +85,12 @@ module.exports = {
             threshold: 10240,
             minRatio: 0.8,
         }), */
-        new CopyPlugin([
-            { from: './src/fonts', to: path.join(finalPath, '/fonts'), force: true },
-            { from: './src/img', to: path.join(finalPath, '/img'), force: true },
-        ]),
+        new CopyPlugin({
+            patterns: [
+                { from: './src/fonts', to: path.join(finalPath, '/fonts'), force: true },
+                { from: './src/img', to: path.join(finalPath, '/img'), force: true },
+            ],
+          }),
         new MiniCssExtractPlugin({
             filename: 'app.css',
         }),
