@@ -28,7 +28,7 @@
     "glslify": "^7.0.0",
     "glslify-import": "^3.1.0",
     "glslify-loader": "^2.0.0",
-    "mini-css-extract-plugin": "^0.8.0",
+    "mini-css-extract-plugin": "^1.6.2",
     "node-sass": "^4.12.0",
     "purgecss-webpack-plugin": "^1.6.0",
     "raw-loader": "^3.1.0",
