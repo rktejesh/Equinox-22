@@ -1,8 +1,7 @@
 # Equinox 22 website
-Use node -v12
 
 ## Installation
-Run this command in the terminal
+Run this command in the terminal to install all required packages. Node v16 is required.
 ```
 npm install
 ```
@@ -12,7 +11,7 @@ Compile the code
 npm run build
 ```
 
-Compile the code with a local server
+Compile the code and run on dev environment in local server
 ```
 npm run watch
 ```
