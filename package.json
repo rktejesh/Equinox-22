@@ -11,7 +11,7 @@
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "compression-webpack-plugin": "^3.1.0",
+    "compression-webpack-plugin": "^6.1.1",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "eslint": "^6.5.1",
@@ -28,7 +28,7 @@
     "glslify": "^7.0.0",
     "glslify-import": "^3.1.0",
     "glslify-loader": "^2.0.0",
-    "mini-css-extract-plugin": "^0.8.0",
+    "mini-css-extract-plugin": "^1.6.2",
     "node-sass": "^4.12.0",
     "purgecss-webpack-plugin": "^1.6.0",
     "raw-loader": "^3.1.0",
@@ -36,7 +36,7 @@
     "style-loader": "^1.0.0",
     "stylelint": "^11.0.0",
     "stylelint-config-standard": "^19.0.0",
-    "stylelint-order": "^3.1.1",
+    "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.11.1",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9"
@@ -47,6 +47,6 @@
     "horwheel": "^1.0.1",
     "optiscroll": "^3.2.1",
     "smooth-scrollbar": "^8.4.0",
-    "three": "^0.137.0"
+    "three": "^0.141.0"
   }
 }
