@@ -2,7 +2,6 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
-const CompressionPlugin = require('compression-webpack-plugin')
 
 const finalPath = path.resolve(__dirname, 'dist')
 
