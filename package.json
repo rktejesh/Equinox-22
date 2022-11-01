@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "eslint-plugin-react-hooks": "^4.5.0",
-    "gsap": "^2.1.3",
+    "gsap": "^3.11.3",
     "horwheel": "^1.0.1",
     "npm-check-updates": "^13.0.4",
     "optiscroll": "^3.2.1",
