@@ -47,6 +47,6 @@
     "npm-check-updates": "^13.0.4",
     "optiscroll": "^3.2.1",
     "smooth-scrollbar": "^8.7.4",
-    "three": "^0.141.0"
+    "three": "^0.148.0"
   }
 }
